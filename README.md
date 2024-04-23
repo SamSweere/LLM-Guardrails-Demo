@@ -1,5 +1,5 @@
-# LLM-Guardrails-Comparison
-Comparison between NeMo Guardrails and Guardrails AI on a simple chatbot.
+# LLM Guardrails Demo
+Demonstration on LLM Guardrails on a simple chatbot.
 
 Guardrail GitHub repositories:
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
