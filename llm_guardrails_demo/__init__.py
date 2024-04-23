@@ -1,4 +1,4 @@
-# # Setup logging
-# from llm_guardrails_demo.utils import setup_logging
+# Load the .env file for credentials
+from dotenv import load_dotenv
 
-# setup_logging()
+load_dotenv()
