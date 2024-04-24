@@ -10,8 +10,10 @@ rails = LLMRails(config)
 
 
 def get_chatbot_response(messages):
+    logger.info(f"Received messages: {messages}")
     response = rails.generate(messages=messages)
 
+    logger.info(f"Response: {response}")
     logger.debug(get_nemo_llm_calls_summary(rails))
     # info.print_llm_calls_summary()
     return response
