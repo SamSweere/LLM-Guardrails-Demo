@@ -19,8 +19,10 @@ def predict(message, history):
     return response["content"]
 
 
-welcome_message = "Welcome 👋. I am an LLMotors assistant"
+welcome_message = (
+    "Welcome 👋. I'm Yann LeCruise, your virtual assistant. "
+    + "I'm here to answer any questions you may have about LLMotors. How could I assist you today?"
+)
 
-gr.ChatInterface(
-    fn=predict, title="LLM Guardrails Demo", chatbot=gr.Chatbot(value=[(None, welcome_message)], height=700)
-).launch()
+chatbot = gr.Chatbot(value=[(None, welcome_message)], height=700)
+gr.ChatInterface(fn=predict, title="LLM Guardrails Demo", chatbot=chatbot).launch()
