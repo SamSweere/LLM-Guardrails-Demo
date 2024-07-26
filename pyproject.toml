@@ -9,12 +9,13 @@ packages = [{include = "llm_guardrails_demo"}]
 
 [tool.poetry.dependencies]
 python = '>=3.11,<3.12'
-nemoguardrails = "^0.8.1"
+nemoguardrails = ">=0.9"
 # guardrails-ai = "^0.4.2"
 # anthropic = "^0.21.3"
 gradio = "^4.27.0"
-openai = "^1.23.2"
+# openai = "^1.1"
 python-dotenv = "^1.0.1"
+langchain-openai = "^0.1.8"
 
 
 [tool.poetry.group.dev.dependencies]

@@ -1,0 +1,9 @@
+define bot inform cannot about competitor brands
+  "I cannot talk about competitor brands."
+
+define subflow check blocked terms
+  $is_blocked = execute check_blocked_terms
+
+  if $is_blocked
+    bot inform cannot about competitor brands
+    stop

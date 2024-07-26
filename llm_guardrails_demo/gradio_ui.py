@@ -2,10 +2,22 @@ import gradio as gr
 
 from llm_guardrails_demo.llm_motors_chatbot import (
     get_chatbot_response,
+    get_welcome_message,
 )
 
 
 def predict(message, history):
+    """
+    This function is used by Gradio to get the response from the chatbot.
+
+    Args:
+        message: The message from the user.
+        history: The conversation history.
+
+    Returns:
+        The response from the chatbot.
+    """
+
     history_openai_format = []
     for human, assistant in history:
         if human is not None:
@@ -19,10 +31,7 @@ def predict(message, history):
     return response["content"]
 
 
-welcome_message = (
-    "Welcome 👋. I'm Yann LeCruise, your virtual assistant. "
-    + "I'm here to answer any questions you may have about LLMotors. How could I assist you today?"
-)
+welcome_message = get_welcome_message()
 
 chatbot = gr.Chatbot(value=[(None, welcome_message)], height=700)
 gr.ChatInterface(fn=predict, title="LLM Guardrails Demo", chatbot=chatbot).launch()
