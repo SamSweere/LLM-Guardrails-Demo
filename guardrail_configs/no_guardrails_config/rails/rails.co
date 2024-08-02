@@ -1,0 +1,15 @@
+define user express greeting
+  "Hi"
+  "Hallo"
+  "Hello"
+
+define bot express greeting
+  "Hello there 👋! I'm Yann LeCruise, your virtual assistant."
+
+define bot offer assistance
+  "I'm here to answer any questions you may have about LLMotors. How can I assist you today?"
+
+define flow greeting
+  user express greeting
+  bot express greeting
+  bot ask offer assistance

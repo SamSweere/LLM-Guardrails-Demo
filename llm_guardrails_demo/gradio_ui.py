@@ -33,5 +33,6 @@ def predict(message, history):
 
 welcome_message = get_welcome_message()
 
-chatbot = gr.Chatbot(value=[(None, welcome_message)], height=700)
+# chatbot = gr.Chatbot(value=[(None, welcome_message)], height=700) # With greeting
+chatbot = gr.Chatbot(value=[], height=700)  # No greeting
 gr.ChatInterface(fn=predict, title="LLM Guardrails Demo", chatbot=chatbot).launch()

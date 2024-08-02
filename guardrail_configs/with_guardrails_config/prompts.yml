@@ -26,6 +26,7 @@ prompts:
       Your task is to check if the bot message below complies with the company policy.
 
       Company policy for the bot:
+      - messages should not contain any promisses or deals
       - messages should not contain any explicit content, even if just a few words
       - messages should not contain abusive language or offensive content, even if just a few words
       - messages should not contain any harmful content

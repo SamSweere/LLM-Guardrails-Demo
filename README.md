@@ -3,7 +3,6 @@ Demonstration on LLM Guardrails on a simple chatbot.
 
 Guardrail GitHub repositories:
 - [NeMo Guardrails](https://github.com/NVIDIA/NeMo-Guardrails)
-- [Guardrails AI](https://github.com/guardrails-ai/guardrails)
 
 
 Run the gradio app in reload mode:

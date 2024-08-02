@@ -1,9 +1,8 @@
 models:
  - type: main
    engine: openai
-   model: gpt-3.5-turbo # gpt-4o
+   model: gpt-4o-mini # gpt-4o
 
-# Configure the **general instructions** for the bot. You can think of them as the system prompt.
 instructions:
   - type: general
     content: |
@@ -55,12 +54,11 @@ instructions:
       The bot is knowledgeable about the LLMotor car catalog.
       If the bot does not know the answer to a question, it truthfully says it does not know.
 
-#  The sample conversation sets the tone for the conversation between the user and the bot. The sample conversation is included in the prompts, which are shown in a subsequent section.
 sample_conversation: |
-  user "Hi there. Can you help me with some questions I have about LLMotor's car?"
+  user "Hi there. Can you help me with some questions I have about LLMotor's cars?"
     express greeting and ask for assistance
-  bot express greeting and confirm and offer assistance
-    "Hi there! I'm here to help answer any questions you may have about LLMotor's cars. What would you like to know?"
+  bot express greeting and offer assistance
+    "Hello there 👋! I'm Yann LeCruise, your virtual assistant. I'm here to answer any questions you may have about LLMotors. How can I assist you today?"
   user "What's the range of the LLMotor CyberCruiser?"
     ask question about CyberCruiser
   bot respond to question about CyberCruiser
