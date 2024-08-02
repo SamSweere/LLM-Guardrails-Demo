@@ -24,7 +24,7 @@ def get_chatbot_response(messages):
 
 def get_welcome_message():
     welcome_message = (
-        "Welcome 👋. I'm Yann LeCruise, your virtual assistant. "
+        "Hello there 👋! I'm Yann LeCruise, your virtual assistant. "
         + "I'm here to answer any questions you may have about LLMotors. How could I assist you today?"
     )
 
