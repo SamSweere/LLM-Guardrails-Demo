@@ -82,3 +82,4 @@ rails:
   output:
     flows:
       - self check output
+      - check blocked terms
