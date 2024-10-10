@@ -2,7 +2,6 @@ import gradio as gr
 
 from llm_guardrails_demo.llm_motors_chatbot import (
     get_chatbot_response,
-    get_welcome_message,
 )
 
 
@@ -31,12 +30,7 @@ def predict(message, history):
     return response["content"]
 
 
-welcome_message = get_welcome_message()
-
-# chatbot = gr.Chatbot(value=[(None, welcome_message)], height=700) # With greeting
-# chatbot = gr.Chatbot(value=[], height=700)  # No greeting
-# gr.ChatInterface(fn=predict, title="LLM Guardrails Demo", chatbot=chatbot).launch()
-chatbot = gr.Chatbot(value=[], height=800)  # No greeting
+chatbot = gr.Chatbot(value=[], height=700)
 gr.ChatInterface(
     fn=predict,
     title="LLM Guardrails Demo",
